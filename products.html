@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapdeal|Products</title>
+    <link rel="stylesheet" href="products_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="images/fav.png" />
+</head>
+<body>
+    <div id="currCart" class="currCart">
+        <div class="topBar">
+            <span onclick="hideSuccess()" id="closeIcon" class="material-icons">
+                close
+            </span>
+        </div>
+        <div class="cartInfo">
+            <div id="lftBox">
+                <img id="cartImg" src="images/chappal_product_zoom.jpeg" alt="product image">
+            </div>
+            <div id="rgtBox">
+                <h2>Added to your bag.</h2>
+                <div id="dynmInfo">
+                    <p><span id="cartProdName">product name</span><br><span id="cartProdBrand">product name</span></p>
+                    <p class="cartPriceTxt">INR <span id="cartPrice">59976</span></p>
+                    <div class="checkoutBtns">
+                        <button id="checkoutBtn" onclick="checkOut()">Checkout</button>
+                        <a href="../shopping_cart/shopping_cart.html" class="viewBagAnchor">View Shopping Bag (<span id="cartCount"></span>)<span id="cartQty"></span></a>
+                    </div>
+                    <div class="freq-bought">
+                    </div>    
+                </div>                
+            </div>
+        </div>
+    </div>
+    <div class="products-container">
+        <div class="lft-container">
+            <img id="img1" src="images/chappal_product.jpeg" alt="chappal">
+            <img id="img2"src="images/chappal_product_2.jpeg" alt="chappal">
+            <img src="images/chappal_product_3.jpeg" alt="chappal">
+            <img id="img3" src="images/chappal_product_4.jpeg" alt="chappal">
+            <img id="img4"src="images/chappal_product_5.jpeg" alt="chappal">
+        </div>
+        <div id="zoomerImg" class="zoom-container"></div>
+        <div class="details-container">
+            <div id="ratings" class="ratings">
+            </div>
+            <div class="title">
+                <h2 id="productName" class="title-text">Vivi Slide Sandal<br></h2>
+                <span id="productBrand" class="brands-text">CASLON</span>
+            </div>
+            <div class="prices">
+                <h3><span style="color: red; font-size: medium;">INR</span><span id="mainPrice" class="main-price-text">23999</span><s class="strike-text">INR<span id="discPrice" class="disc-price-text">23999</span></s><span id="discPercent">40% off</span></h3>
+            </div>
+            <div id="description" class="description">
+                <p id="descP1">Price varies with currency exchange rates and may be different than in store.</p>
+                <p id="descP2">Wide leather straps crisscross atop this essential slide sandal furnished with a contoured, arch-supporting footbed that offers lasting comfort.</p>
+            </div>
+            <div class="sizes">
+                <p><b>Fit:</b> Runs large; order 1/2 size down.</p>
+                <div id="sizeDropdown" class="dropdown-content" onclick="toggleSizeDropdown()">
+                    <div class="options">
+                        <h4>Choose a size</h4>
+                        <p class="dropdown-options">Runs large; order 1/2 size down.</p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="options">
+                        <h4 class="title-light">5</h4>
+                        <p class="dropdown-options">Not available in this combination.</p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="options">
+                        <h4 class="title-light">5.5</h4>
+                        <p class="dropdown-options">Not available in this combination.</p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="options">
+                        <h4 class="title-light">6.5</h4>
+                        <p class="dropdown-options">Available soon. Check back.</p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="options">
+                        <h4 class="title-light">8</h4>
+                        <p class="dropdown-options">Not available in this combination.</p>
+                    </div>
+                </div>
+                <div class="dropdown" onclick="toggleSizeDropdown()">
+                    <h4 id="dropdownText">Size</h4>
+                    <span id="dropdownIcon" class="material-icons">
+                        expand_more
+                    </span>
+                </div>
+                <a href="#" class="sizeAnchor">Size Guides</a>
+            </div>
+            <div class="colors">
+                <div id="colorDropdown" class="dropdown-content" onclick="toggleColorDropdown()">
+                    <div class="color-option-txt">
+                        <h4>Choose a color</h4>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="color-option-txt">
+                        <div class="option-color-outer"><div class="option-colors tangerine"></div></div>
+                        <p class="dropdown-options">Orange Tangerine</p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="color-option-txt">
+                        <div class="option-color-outer"><div class="option-colors pink"></div></div>
+                        <p class="dropdown-options">Pink Light</p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="color-option-txt">
+                        <div class="option-color-outer"><div class="option-colors yellow"></div></div>
+                        <p class="dropdown-options">Yellow Lemonade</p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="color-option-txt">
+                        <div class="option-color-outer"><div class="option-colors black"></div></div>
+                        <p class="dropdown-options">Black</p>
+                    </div>
+                </div>
+                <div class="dropdown colorDropdown" onclick="toggleColorDropdown()">
+                    <h4 id="dropdownText">Black</h4>
+                    <span id="dropdownIcon" class="material-icons">
+                        expand_more
+                    </span>
+                </div>
+                <img src="images/chappal_product_colors.JPG" alt="" class="colorBoxes">
+                <a href="" class="sizeAnchor peopleAnchor"><b>84</b> people are viewing</a>
+            </div>
+            <div class="cartbtn">
+                <button onclick="addToCart()"><span id="bagIcon" class="material-icons">work</span>Add to Cart</button>
+            </div>
+            <div class="wishlist">
+                <span id="addIcon" class="material-icons">add</span>
+                <a href="">Add to Wish List</a>
+            </div>
+        </div>
+        <div class="rgt-container">
+            <h3>You might also like</h3>
+            <img class="rcmd-img" src="images/rcmd_1.jpeg" alt="">
+            <img class="rcmd-img" src="images/rcmd_4.jpg" alt="">
+            <img class="rcmd-img" src="images/rcmd_1.jpeg" alt="">
+            <img class="rcmd-img" src="images/rcmd_3.jpeg" alt="">
+        </div>
+    </div>
+    <div class="info-container">
+        <div class="info-left">
+            <h1>SIZE INFO</h1>
+            <ul>
+                <li>Runs large; order 1/2 down.</li>
+            </ul>
+            <br><br>
+            <h1>DETAILS & CARE</h1>
+            <p>Wide leather straps crisscross atop this essential slide sandal furnished with a contoured, arch-supporting footbed that offers lasting comfort.</p>
+            <ul>
+                <li>Contoured footbed</li>
+                <li>Leather upper/synthetic lining/rubber sole</li>
+                <li>Women's Shoes</li>
+                <li>Item #123456789</li>
+            </ul>
+            <br><br>
+            <h3>Helpful info:</h3>
+            <a href="">How to Measure Heel Heights</a>
+            <a href="">See details and tips from a salesperson (video)</a>
+            <br><br>
+            <p><b>Free Shipping & Returns</b><a href=""> See more</a><p>
+        </div>
+        <div class="info-right">
+            <h1><a href="" id="brand2">CASLON</a></h1>
+            <p>Eased-up and effortless. Travel-ready—but totally down for everyday. Caslon's collection of modern essentials, available exclusively at Snapdeal, keeps the attitude relaxed with ultrawearable silhouettes and natural fibers. Everything in life should be this easy.</p>
+        </div>
+    </div>
+   
+</body>
+<script src="products_main.js"></script>
+</html>
