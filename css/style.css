@@ -1,0 +1,319 @@
+ul.snapLinks {
+    display: inline-block;
+}
+ul.snapLinks li {
+    display: inline;
+    padding: 0 10px;
+}
+body {
+    margin: 0;
+}
+.topSection p {
+    display: inline-block;
+    margin: 7px 0;
+    color: #fff;
+}
+ul.snapLinks {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin: 7px 0;
+}
+ul.snapLinks li {
+    display: inline;
+    padding: 0 10px;
+}
+body {
+    margin: 0;
+    background-color: #f7f7f7 !important;
+}
+.header {
+    display: block;
+    position: relative;
+}
+section.topSection {
+    display: block;
+    background: #c7003d;
+}
+.bx_sec {
+    margin: 0 46px;
+    position: relative;
+}
+ul.snapLinks li a {
+    color: #fff;
+    text-decoration: none;
+}
+.bottomSection {
+    background: #e40046;
+    padding: 14px 0;
+}
+.logo {
+    margin: 0 46px;
+}
+.bottomSection div {
+    display: inline;
+    position: relative;
+}
+.search_bar input {
+    background: rgb(244 244 244 / 95%);
+    border: none;font-size: 14px;
+    color: #909090;border-right: none;
+    height: 37px;
+    padding: 0 10px 0 32px;
+    outline: none;
+    text-overflow: ellipsis;
+    border-radius: 2px 0px 0px 2px;
+    font-family: "font-regular";
+    width: 590px;
+}
+#search_icon {
+    background: #333;
+    color: #fff;
+    height: 37px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    border-radius: 0 3px 3px 0;
+    position: absolute;
+    right: -110px;
+    width: 126px;
+}
+.cart_signin_sec {
+    position: absolute !important;
+    right: 115px;
+    top: 55px;
+}
+.cart a, .sign_in a, .cart a:hover, .sign_in a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.cart span, .sign_in span {
+    border-left: 1px solid rgba(0,0,0,0.07);
+    text-align: center;
+    cursor: pointer;
+    padding: 24px;
+    font-size: 16px;
+}
+.cart span i, .sign_in span i {
+    padding-left: 15px;
+}
+.navigation {
+    margin: 20px 20px 20px 83px;
+    float: left;
+}
+.smallNav {
+    width: 200px;
+    background: #fff;
+    box-shadow: 0 4px 17px 0 rgb(0 0 0 / 10%);
+    border-radius: 3px;
+    margin-right: 0px;
+    position: relative;
+    padding: 15px;
+    list-style: none;
+}
+.smallNav li {
+    font-size: 12px;
+    line-height: 26px;
+}
+.smallNav li a {
+    color: #666;
+    border: none;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+    line-height: 26px;
+    margin-left: 19px;
+    text-transform: capitalize;
+}
+.smallNav h5 {
+    font-size: 11px;
+    color: #333333;
+    margin-left: 17px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.banner {
+    width: 875px;
+    float: left;
+    margin: 20px 0 0;
+    border: solid 1px #e5e5e5;
+}
+.rightNav {
+    display: table-cell;
+    padding-left: 15px;
+    width: 245px;
+    vertical-align: top;
+}
+.item img {
+    min-height: 272px;
+}
+.navContent {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: solid 0.9px #e5e5e5;
+    border-radius: 3px;
+    padding: 10px 10px 50px;
+}
+.navContent h4 {
+    font-size: 12px;
+    font-weight: normal;
+    color: #999999;
+    padding-bottom: 4px;
+}
+.navContent p {
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.59;
+    text-align: center;
+    color: #5a5a59;
+}
+.navContent input {
+    height: 35px;
+    padding: 3px 0px 6px 9px;
+    line-height: 16px;
+    font-size: 12px;
+    line-height: 1.47;
+    color: #999999;
+    width: 213px;
+    border-radius: 1.9px;
+    background-color: #fbfbfb;
+    border: solid 1px #e5e5e5;
+    margin-bottom: 15px;
+}
+.navContent button {
+    border-color: #333;
+    background: #333;
+    border-radius: 3px;
+    display: inline-block;
+    height: 35px;
+    line-height: 36px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 13px;
+    width: 140px;
+    float: left;
+}
+span.navNext {
+    background: #f4f4f4;
+    border-radius: 3px;
+    display: inline-block;
+    height: 35px;
+    line-height: 36px;
+    text-transform: uppercase;
+    border: none;
+    width: 60px;
+    float: right;
+}
+.navNext a, .navNext a:hover {
+    color: #999;
+    text-decoration: none;
+}
+ul.bannerNav {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    background: #FFF;
+    font-size: 13px;
+    bottom: 0;
+    border-top: 0;
+    overflow: hidden;
+}
+ul.bannerNav li {
+    width: 20%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #666;
+    padding: 20px 0 16px;
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+ul.bannerNav li a, ul.bannerNav li a:hover {
+    color: #666;
+    text-decoration: none;
+}
+.mainContent {
+    display: inline-block;
+}   
+ul.list_items {
+    list-style: none;
+    padding: 15px 15px 30px;
+    background-color: #fff;
+}
+ul.list_items li.product_item {
+    display: inline-block;
+    width: 190px;
+    text-align: left;
+    margin: 0 12px;
+}
+a.right.carousel-control, a.left.carousel-control {
+    background-image: none;
+}
+.content_wrap ul li img {
+    max-width: 100%;
+    max-height: 232px;
+    min-height: 232px;
+}
+.product_img {
+    max-width: 190px;
+    min-width: 190px;
+}
+.content_wrap {
+    max-width: 1127px;
+    min-width: 1127px;
+}
+.content_wrap .product_details h5 a, .fl_content_wrap .product_details h5 a {
+    color: #999;
+}
+.fl_content_wrap ul li img {
+    max-width: 100%;
+    max-height: 232px;
+    min-height: 232px;
+}
+.product_img {
+    max-width: 190px;
+    min-width: 190px;
+}
+.fl_mainContent {
+    margin: 0 90px;
+}
+.download_app {
+    background: #fff;
+    margin: 30px 60px;
+    overflow: hidden;
+}
+.phone_dwn {
+    float: left;
+    margin: 0 50px;
+    padding: 0 30px;
+}
+.dwn_link {float: left;}
+.dwn_link h3 {
+    font-size: 41px;
+    padding: 45px 0 0;
+    margin: 25px 0 20px;
+    line-height: 50px;
+}
+.dwn_link p {
+    font-size: 18px;
+    color: #777777;
+    margin: 0;
+    line-height: 1.84;
+}
+span.leaf {
+    float: right;
+}
+.dwn_link span {
+    margin-top: 30px;
+    display: inline-block;
+}
