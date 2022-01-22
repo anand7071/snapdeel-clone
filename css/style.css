@@ -110,12 +110,13 @@ ul.snapLinks li a {
     border-radius: 3px;
     margin-right: 0px;
     position: relative;
-    padding: 15px;
+    padding: 15px 0 15px 5px;
     list-style: none;
 }
 .smallNav li {
     font-size: 12px;
     line-height: 26px;
+    position: relative;
 }
 .smallNav li a {
     color: #666;
@@ -125,9 +126,10 @@ ul.snapLinks li a {
     white-space: nowrap;
     padding-right: 10px;
     text-overflow: ellipsis;
-    line-height: 26px;
+    line-height: 36px;
     margin-left: 19px;
     text-transform: capitalize;
+    text-decoration: none;
 }
 .smallNav h5 {
     font-size: 11px;
@@ -316,4 +318,157 @@ span.leaf {
 .dwn_link span {
     margin-top: 30px;
     display: inline-block;
+}
+.footer {
+    background-color: #fff;
+}
+ul.secure_sec {
+    padding: 0 90px;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    margin: 0;
+}
+ul.secure_sec li {
+    display: inline-block;
+    text-align: center;
+    padding: 30px 20px;
+    width: 24%;
+    border-left: 1px solid #e2e2e2;
+}
+ul.secure_sec li:last-child {
+    border-right:1px solid #e2e2e2 ;
+}
+ul.secure_sec li a h6{
+    color:#5a5a5a;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 25px;
+}
+ul.secure_sec li a p {
+    color: #a4a3a3;
+    font-size: 12px;
+    margin: 0;
+    line-height: 20px;
+}
+
+ul.secure_sec li a {
+    text-decoration: none;
+}
+.policy_sec {
+    padding: 0 90px;
+}
+.list_sec {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    width: 19%;
+    margin-top: 20px;
+    vertical-align: top;
+}
+span.subs {
+    width: 19%;
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+}
+.list_sec h4 {
+    color: #344c55;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+.list_sec li a {
+    color: #777;
+    text-decoration: none;
+    font-size: 12px;
+}
+.subs h4 {
+    color: #344c55;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+.subs input {
+    font-size: 13px;
+    color: #999;
+    border: none;
+    border-radius: 2.9px;
+    background-color: #f7f8fa;
+    height: 37.5px;
+    right: 0;
+    padding: 5px 10px;
+}
+.subs button {
+    height: 38px;
+    font-size: 12px;
+    line-height: 13px;
+    border-color: #333;
+    background: #333;
+    color: #fff;
+    position: absolute;
+    border-radius: 0px 2.9px 2.9px 0;
+    padding: 0 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.subs p {
+    font-size: 12px;
+    color: #777;
+    margin: 15px 0;
+}
+.subs p a {
+    color: #25a8ed;
+}
+.smallNav li .hidden_box {
+    position: absolute;
+    right: -230px;
+    z-index: 9;
+    background: #fff;
+    top: -49px;
+    box-shadow: 8px 4px 17px 0 rgb(0 0 0 / 10%);
+    background-color: #fafafa;
+    padding: 20px;
+    list-style: none;
+    display: none;
+}
+.smallNav li .hidden_box li {
+    width: 190px;
+}
+.hidden_box h5 {
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+}
+.smallNav li .hidden_box li a {
+    line-height: 26px;
+}
+.smallNav li:hover {
+    background: #ffffff;
+    border-left: 3px solid #e40046 !important;
+    color: #37474e;
+    border-right: 0 !important;
+    border: solid 0.9px #e5e5e5;
+    width: 195px;
+    height: 42px;
+    background-color: #fafafa;
+    border-radius: 1.9px;
+}
+.hidden_box li:hover {
+    background: none;
+    border-left: 0 !important;
+    color:none;
+    border-right: 0 ;
+    border: 0 ;
+    width: auto;
+    height: auto;
+    background-color: auto;
+    border-radius: 0 ;
+}
+.smallNav li:hover .hidden_box {
+  display: block;
 }
