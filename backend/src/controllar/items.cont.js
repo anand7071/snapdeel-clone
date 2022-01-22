@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
-const UserSchema = require("../module/evalutions.modle")
+const UserSchema = require("../module/items.schema")
 
 const router = express.Router();
 
