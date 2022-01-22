@@ -6,8 +6,11 @@ const UserSchema = require("../module/items.schema")
 const router = express.Router();
 
 router.get("/",async(req,res)=>{
-    user = await UserSchema.find().lean();
-    res.status(200).json({data:user})
+    products = await UserSchema.find().lean();
+    res.render("products/all",{
+        products
+    })
+    res.status(200).json(products)
 })
 router.get("/:id",async(req,res)=>{
     user = await UserSchema.findById(req.params.id).lean().exec();
