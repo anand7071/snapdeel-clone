@@ -1,9 +1,12 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const favicon = require('serve-favicon');
 const connect = require('./config/db');
 const path = require('path');
-require('dotenv').config();
+const session = require("express-session")
+const flash = require("express-flash")
+
 
 app.use(express.json());
 app.set('view engine', 'ejs');
@@ -12,6 +15,15 @@ const itemSchema = require('./models/items.schema');
 const itemCont = require('./controller/items.cont');
 const frontpageCont = require('./controller/frontPage.cont');
 
+app.use(session({
+    secret:process.env.COOKIES_SECRET,
+    resave:false,
+    saveUninitialized:false,
+    cookie:{maxAge:1000*60*60*24}
+
+}))
+
+app.use(flash())
 
 app.use(favicon(path.join(__dirname, 'public', 'images', 'fav.png')));
 app.use(express.static(__dirname + '/public'));

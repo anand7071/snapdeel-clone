@@ -6,14 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/footer.css" type='text/css'>
-  <link rel="stylesheet" href="/css/product.css" type='text/css'>
+
   <link rel="stylesheet" href="/css/navbar.css" type='text/css'>
-  <link rel="stylesheet" href="./style/products_style.css">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/ico" href="https://www.snapdeal.com/img/icons/finalFavicon.ico">
   <title>Products</title>
   <style>
@@ -96,6 +90,7 @@
                 <img class="ProductClass" src="<%= items.item_img_path%> " alt="">
 
             </div>
+            <% Object.assign("item",items) %> 
             <div class="conatiner2">
                 <div class="conatinerhedding">
                     <h3><%= items.item_name%> </h3>
@@ -107,7 +102,7 @@
                         <span class="Price">Rs. <%= items.price%></span><span style="color: grey; margin: 10px; border: 2px solid rgb(185, 171, 171);">74% OFF</span>
                         <div class="BuyNowBox">
                             <div class="buttonclass">
-                                <div class="Button"><a href="#" style="color: white;margin-top: 12px;">ADD TO CART</a></div>
+                                <div class="Button"><a onclick="addTocart(item)" style="color: white;margin-top: 12px;">ADD TO CART</a></div>
                                 <div class="Button" style="background-color:rgb(245, 68, 97);"><a href="#" style="color: white;margin-top: 12px; ">BUY NOW</a></div>
 
                                 
@@ -152,3 +147,8 @@
 
     <%- include('partials/footer') %>
 </body>
+<script>
+    function addTocart(items){
+        alert(items)
+    }
+</script>

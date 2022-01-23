@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/css/footer.css" type='text/css'>
   <link rel="stylesheet" href="/css/signing.css" type='text/css'>
   <link rel="stylesheet" href="/css/navbar.css" type='text/css'>
+  <link rel="stylesheet" href="/css/stylesignin.css" type='text/css'>
   <link rel="icon" type="image/ico" href="https://www.snapdeal.com/img/icons/finalFavicon.ico">
   <title>Login / SignIn</title>
 </head>
@@ -15,9 +16,34 @@
 <body>
   <%- include('partials/navbar') %>
   <%- include('partials/signing') %>
+  <div>
+    <div class="login-box">
+        <h2>Login/Sign Up On Snapdeal</h2>
+        <h4>Please provide your Mobile Number or Email to Login/SignUp on Snapdeal</h4>
+        <form id="myForm" onsubmit="signin1(event)" action="">
+            <label></label>
+            <input type="email" placeholder="Mobile Number/Email Address" id="Email">
+            <label></label>
+           
+           
+            <input type="submit">
+            <p class="para-2">or Login using </p>
+        </form>
+        <div class="online-login">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG3I0D9YopBvB5dk5xcSu192NmSK0QFyUoDg&usqp=CAU" alt="" > <a href="https://www.facebook.com/"></a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk4fzsbwnDUgqvGyCfYEdWOuXTS0bZWtgMIg&usqp=CAU" alt="">
+         
+         </div>
+     
+     
+    </div>
+</div>
 
-  <div class='container'>
-  </div>
+
+
+
+
+
   <%- include('partials/footer') %>
 </body>
 
