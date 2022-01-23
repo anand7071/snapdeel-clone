@@ -30,6 +30,10 @@ router.get("/Data6",async(req,res)=>{
     product = await productSchema.find(req.params.id).lean().exec();
     res.render("pd",product)
 })
+router.get("/Data7",async(req,res)=>{
+    product = await productSchema.find({item_name:"boAt Airdopes 131/138 Twin Wireless Earbuds with IWP Technology"}).lean().exec();
+    res.render("pd",product)
+})
 router.post("/",async(req,res)=>{
     user = await productSchema.create(req.body);
     res.status(200).json({data:user})

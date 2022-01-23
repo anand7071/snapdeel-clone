@@ -14,8 +14,6 @@
 </head>
 
 <body>
-  <%- include('partials/navbar') %>
-  <%- include('partials/signing') %>
   <div>
     <div class="login-box">
         <h2>Login/Sign Up On Snapdeal</h2>
@@ -26,7 +24,7 @@
             <label></label>
            
            
-            <input type="submit">
+            <input type="submit" onclick="LogedIn" href="/">
             <p class="para-2">or Login using </p>
         </form>
         <div class="online-login">
@@ -48,3 +46,8 @@
 </body>
 
 </html>
+<script>
+  function LogedIn(){
+    alert("LogedIn")
+  }
+</script>

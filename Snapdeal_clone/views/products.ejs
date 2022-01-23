@@ -10,12 +10,19 @@
   <link rel="stylesheet" href="/css/navbar.css" type='text/css'>
   <link rel="icon" type="image/ico" href="https://www.snapdeal.com/img/icons/finalFavicon.ico">
   <title>Products</title>
+  <style>
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  </style>
 </head>
 <body>
     <%- include('partials/navbar') %>
     <article style="width: 85%;">
      
       <% products.forEach(items =>{%>
+        <a href="/pd/Data7">
       <div>
         <img
           src="<%= items.item_img_path%>"
@@ -25,7 +32,7 @@
         <h4>Rs.<%= items.price %></h4>
       </div>
       <%})%>
-      
+      </a>
       </article>
 
     <%- include('partials/footer') %>
