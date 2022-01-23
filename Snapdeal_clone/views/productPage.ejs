@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/footer.css" type='text/css'>
+  <link rel="stylesheet" href="/css/product.css" type='text/css'>
+  <link rel="stylesheet" href="/css/navbar.css" type='text/css'>
+  <link rel="stylesheet" href="./style/products_style.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/ico" href="https://www.snapdeal.com/img/icons/finalFavicon.ico">
+  <title>Products</title>
+  <style>
+      
+      .conatiner{
+          width: 85%;
+          display: flex;
+          justify-content: space-between;
+          margin: auto;
+
+      }
+      .conatiner1{
+        width: 40%;
+        
+      }
+      .conatiner2{
+        width: 58%;
+       
+      }
+      .conatinerhedding{
+          width: 90%;
+          height: 70px;
+          margin: auto;
+      }
+      .ProductClass{
+          width: 100%;
+      }
+      .conatinerProductDetail{
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+
+      }
+      .priceContainer{
+          width: 65%;
+      }
+      .offerConatiner{
+          width: 35%;
+      }
+    .pdpDiscount{
+        color: grey;
+    }
+    .Price{
+        color:red;
+        font-size: 40px;
+    }
+    .bankOffer{
+        padding: 5px;
+    }
+    .BuyNowBox{
+        margin-top: 100px;
+        width: 100%;
+    }
+    .buttonclass{
+        width: 60%;
+        margin-left: 150px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Button{
+        width: 47%;
+        border-radius: 25px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+
+    }
+    a{
+        text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <% product.forEach(items=>{ %>
+        <div class="conatiner">
+            <div class="conatiner1">
+                <img class="ProductClass" src="<%= items.item_img_path%> " alt="">
+
+            </div>
+            <div class="conatiner2">
+                <div class="conatinerhedding">
+                    <h3><%= items.item_name%> </h3>
+                </div>
+                <div class="conatinerProductDetail">
+                    <div class="priceContainer">
+                        <span class="pdpDiscount">MRP  Rs. 499  (Inclusive of all taxes)Rs. 129 74% OFF	</span>
+                        <br>
+                        <span class="Price">Rs. <%= items.price%></span><span style="color: grey; margin: 10px; border: 2px solid rgb(185, 171, 171);">74% OFF</span>
+                        <div class="BuyNowBox">
+                            <div class="buttonclass">
+                                <div class="Button"><a href="#" style="color: white;margin-top: 12px;">ADD TO CART</a></div>
+                                <div class="Button" style="background-color:rgb(245, 68, 97);"><a href="#" style="color: white;margin-top: 12px; ">BUY NOW</a></div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offerConatiner">
+                        <p>(3) Offers | Applicable on cart</p>
+                        <div class="bankOffer">
+                        <span style="color: grey; margin: 10px; " >10% instant discount using Axis Bank Credit & Debit Cards. </span><a href="#">T&C</a>
+                        </div>
+                        <div class="bankOffer">
+                        <span style="color: grey; margin: 10px; " >15% Instant Discount Using AU Small Finance Bank Debit & Credit Cards </span><a href="#">T&C</a>
+                        </div>
+                        <div class="bankOffer">
+                            <span style="color: grey; margin: 10px; " >15% Instant Discount Using AU Small Finance Bank Debit & Credit Cards </span><a href="#">T&C</a>
+                            </div>  
+    
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    <% }) %> 
+
+
+
+
+
+    <%- include('partials/footer') %>
+</body>

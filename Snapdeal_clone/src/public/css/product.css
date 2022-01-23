@@ -1,0 +1,91 @@
+#conatiner{
+  width: 70%;
+}
+.logo {
+  cursor: pointer;
+  margin-right: 32px;
+}
+nav {
+  height: 70px;
+  display: flex;
+  background-color: #f03e3e;
+  justify-content: center;
+  align-items: center;
+}
+.menu-icon {
+  width: 24px;
+  color: #fff;
+  margin-right: 32px;
+}
+.search {
+  padding: 10px 350px 10px 32px;
+  border: none;
+}
+.search-btn {
+  padding: 10px 32px;
+  color: #fff;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  cursor: pointer;
+}
+.btn-icon {
+  width: 14px;
+}
+.cart-icon,
+.sign-in-icon {
+  width: 24px;
+  color: white;
+}
+.cart {
+  display: flex;
+  gap: 4px;
+  margin-left: 200px;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+.sign-in {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-left: 80px;
+  color: white;
+  cursor: pointer;
+}
+article {
+  width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  margin: auto;
+  column-gap: 3%;
+  margin-top: 80px;
+}
+article img {
+  width: 250px;
+  height: 280px;
+}
+article > div {
+  padding: 5px 0 2px 16px;
+}
+article > div > h4 {
+  margin-top: 10px;
+}
+article > div:hover {
+  box-shadow: 2px 2px 20px 10px #dee2e6;
+  cursor: pointer;
+}
+footer {
+  margin-top: 100px;
+  background-color: #f8f9fa;
+  padding: 64px 20px 20px 20px;
+}
+footer > div {
+  width: 1400px;
+  margin: auto;
+}
+footer h2 {
+  margin-bottom: 50px;
+}
