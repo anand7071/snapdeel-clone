@@ -42,7 +42,7 @@ app.get('/signIn', (req, res) => {
     res.render('signIn');
 });
 app.use("/products",itemCont)
-app.use("/productPage",frontpageCont)
+app.use("/pd",frontpageCont)
 
 
 
