@@ -1,5 +1,5 @@
 {
-  "name": "mpl",
+  "name": "snapdeal-clone",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -24,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nileshagrawal98/MPL-Cloning.git"
+    "url": "git+https://github.com/anand7071/snapdeel-clone/"
   },
   "bugs": {
-    "url": "https://github.com/nileshagrawal98/MPL-Cloning/issues"
+    "url": "https://github.com/anand7071/snapdeel-clone/"
   },
-  "homepage": "https://github.com/nileshagrawal98/MPL-Cloning#readme"
+  "homepage": "https://github.com/anand7071/snapdeel-clone/blob/main/README.md"
 }
